@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="vcard/images/G.png" type="image/x-icon">
+    <link rel="stylesheet" href="vcard/assets/fontaswesome/css/all.min.css" />
+    <link rel="stylesheet" href="vcard/assets/fontaswesome/css/fontawesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Roboto+Slab:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="vcard/css/vendor/slick.css" />
+    <link rel="stylesheet" href="vcard/css/tailwind.css" />
+    <link rel="stylesheet" href="vcard/css/custom.css" />
+    <title>Gaurav Shah</title>
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.classList.remove("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    </script>
+</head>
+
+<body data-theme="light">
+    <div id="preloader">
+        <div class="loader_line"></div>
+    </div>
+
+    <div class="bg-homeBg dark:bg-homeTwoBg-dark min-h-screen bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
+        <div class="section-bg">
+            <div class="w-full flex text-align-center px-4" style="justify-content: space-around;">
+                <a href="index.html">
+                    <img src="vcard/images/G.png" alt="logo" height="250px" width="250px" />
+                </a>
+                <!-- <div class="flex items-center">
+                    <button id="theme-toggle" type="button" class="dark-light-btn">
+                        <i id="theme-toggle-dark-icon" class="fa-solid text-xl fa-moon hidden"></i>
+                        <i id="theme-toggle-light-icon" class="fa-solid fa-sun text-xl hidden"></i>
+                    </button>
+                    <button id="menu-toggle" type="button" class="menu-toggle-btn">
+                        <i id="menu-toggle-open-icon" class="fa-solid fa-bars text-xl "></i>
+                        <i id="menu-toggle-close-icon" class="fa-solid fa-xmark text-xl hidden  "></i>
+                    </button>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- mobile menu start -->
+        <!-- <nav id="navbar" class="hidden lg:hidden">
+            <ul
+                class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]">
+                <li>
+                    <a class="mobile-menu-items-active" href="aboutOne.html">
+                        <span class="mr-2 text-xl">
+                            <i class="fa-regular fa-user"></i>
+                        </span>About </a>
+                </li>
+                <li>
+                    <a class="mobile-menu-items" href="resumeOne.html">
+                        <span class="mr-2 text-xl">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </span>Resume </a>
+                </li>
+                <li>
+                    <a class="mobile-menu-items" href="portfiloOne.html">
+                        <span class="mr-2 text-xl">
+                            <i class="fas fa-briefcase"></i>
+                        </span>Works </a>
+                </li>
+                <li>
+                    <a class="mobile-menu-items" href="blogOne.html">
+                        <span class="mr-2 text-xl">
+                            <i class="fa-brands fa-blogger"></i>
+                        </span>Blogs </a>
+                </li>
+                <li>
+                    <a class="mobile-menu-items" href="contactOne.html">
+                        <span class="mr-2 text-xl">
+                            <i class="fa-solid fa-address-book"></i>
+                        </span> Contact </a>
+                </li>
+            </ul>
+        </nav> -->
+
+        <div class="container grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px]">
+            <div class="col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-44">
+                <div
+                    class="w-full mb-6 lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
+                    <img src="vcard/images/Gaurav.jpeg"
+                        class="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px]"
+                        alt="about" />
+                    <div class="pt-[100px] pb-8">
+                        <h2 class="mt-6 mb-1 text-[26px] font-semibold dark:text-white"> Gaurav Shah </h2>
+                        <h3
+                            class="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">
+                            FINANCIAL ARCHITECT<br />LIFE AND GENERAL INSURANCE </h3>
+                        <!-- <div class="flex justify-center space-x-3">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                <span class="socialbtn text-[#1773EA]">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </span>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                <span class="socialbtn text-[#1C9CEA]">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </span>
+                            </a>
+                            <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+                                <span class="socialbtn text-[#e14a84]">
+                                    <i class="fa-brands fa-dribbble"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                                <span class="socialbtn text-[#0072b1]">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </span>
+                            </a>
+                        </div> -->
+                        <!-- personal infomation start -->
+                        <div class="p-7 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D]">
+                            <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
+                                <span class="socialbtn bg-white dark:bg-black text-[#E93B81] shadow-md">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                </span>
+                                <div class="text-left ml-2.5">
+                                    <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Phone </p>
+                                    <p class="dark:text-white"><a href="tel:+919377115122">+91 93771 15122</a></p>
+                                </div>
+                            </div>
+                            <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5">
+                                <span class="socialbtn bg-white dark:bg-black text-[#6AB5B9] shadow-md">
+                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                </span>
+                                <div class="text-left ml-2.5">
+                                    <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Email </p>
+                                    <p class="dark:text-white" style="font-size: small;"><a
+                                            href="mailto:insurewithgs@gmail.com">insurewithgs@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5">
+                                <span class="socialbtn bg-white dark:bg-black text-[#FD7590] shadow-md px-4">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <div class="text-left ml-2.5">
+                                    <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Location </p>
+                                    <p class="dark:text-white">3rd Floor, Om Sai Residency, Beside Khela Ghar, Nr.Star
+                                        Club Ghogha Circle, Bhavnagar 364002</p>
+                                </div>
+                            </div>
+                            <!-- <div class="flex py-2.5">
+                                <span class="socialbtn bg-white dark:bg-black text-[#C17CEB] shadow-md">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </span>
+                                <div class="text-left ml-2.5">
+                                    <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Birthday </p>
+                                    <p class="dark:text-white">May 27, 1990</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!-- personal infomation end-->
+                        <!-- dowanload button -->
+                        <button class="dowanload-btn" onclick="window.open('./vcard/GauravShah.vcf')">
+                            <img class="mr-3" src="vcard/images/icons/dowanload.png" alt="icon" /> Save Contact
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-8">
+                <!-- header for mobile devices start -->
+                <!-- <header
+                    class="lg:w-[560px] h-[144px] hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-white dark:bg-[#111111]">
+                    <nav class="hidden lg:block">
+                        <ul class="flex">
+                            <li> <a class="menu-active" href="aboutOne.html">
+                                    <span class="text-xl mb-1">
+                                        <i class="fa-regular fa-user"></i>
+                                    </span> About </a></li>
+                            <li> <a class="menu-item" href="resumeOne.html">
+                                    <span class="text-xl mb-1">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </span> Resume </a></li>
+                            <li> <a class="menu-item" href="portfiloOne.html">
+                                    <span class="text-xl mb-1">
+                                        <i class="fas fa-briefcase"></i>
+                                    </span> Works </a></li>
+                            <li><a class="menu-item" href="blogOne.html">
+                                    <span class="text-xl mb-1">
+                                        <i class="fa-brands fa-blogger"></i>
+                                    </span> Blogs </a></li>
+                            <li> <a class="menu-item" href="contactOne.html">
+                                    <span class="text-xl mb-1">
+                                        <i class="fa-solid fa-address-book"></i>
+                                    </span> Contact </a></li>
+                        </ul>
+                    </nav>
+                </header> -->
+                <!-- header for mobile devices end -->
+
+                <!-- about me section start -->
+                <div>
+                    <div class="lg:rounded-2xl bg-white dark:bg-[#111111]">
+                        <div class="pt-12 md:py-12 px-2 sm:px-5 md:px-10 lg:px-14">
+                            <!-- about page title -->
+                            <h2 class="after-effect after:left-52" style="width: 100%; text-align: center;">About Me</h2>
+                            <!-- personal info for mobile devices start -->
+                            <div class="lg:hidden">
+                                <div
+                                    class="w-full mb-6 lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
+                                    <!-- profile image  -->
+                                    <img src="vcard/images/Gaurav.jpeg"
+                                        class="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px]"
+                                        alt="about" />
+                                    <div class="pt-[100px] pb-8">
+                                        <h2 class="mt-6 mb-1 text-[26px] font-semibold dark:text-white">Gaurav Shah
+                                        </h2>
+                                        <h3
+                                            class="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">
+                                            FINANCIAL ARCHITECT<br />LIFE AND GENERAL INSURANCE</h3>
+
+
+                                        <div class="flex justify-center space-x-3">
+                                            <!-- <a href="https://wa.me/message/F6OW3VBSP5NPJ1" target="_blank" rel="noopener noreferrer">
+                                                    <span class="socialbtn" style="color: #00BD07!important;">
+                                                        <i class="fa-brands fa-whatsapp"></i>
+                                                    </span>
+                                                </a> -->
+                                            <a href="https://wa.me/919377115122" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <span class="socialbtn" style="color: green!important;">
+                                                    <i class="fa-brands fa-whatsapp"></i>
+                                                </span>
+                                            </a>
+                                            <!-- <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="socialbtn text-[#e14a84]">
+                                                        <i class="fa-brands fa-dribbble"></i>
+                                                    </span>
+                                                </a> -->
+                                            <!-- <a href="https://www.linkedin.com/in/jayshah-nmtpl/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="socialbtn text-[#0072b1]">
+                                                        <i class="fa-brands fa-linkedin-in"></i>
+                                                    </span>
+                                                </a> -->
+                                        </div>
+                                        <!-- personal info start -->
+                                        <div class="p-3 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D]">
+                                            <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
+                                                <span class="socialbtn bg-white dark:bg-black text-[#E93B81] shadow-md">
+                                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                                </span>
+                                                <div class="text-left ml-2.5">
+                                                    <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Phone </p>
+                                                    <p class="dark:text-white"><a href="tel:+919377115122">+91 93771
+                                                            15122</a></p>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5">
+                                                <span class="socialbtn bg-white dark:bg-black text-[#6AB5B9] shadow-md">
+                                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                                </span>
+                                                <div class="text-left ml-2.5">
+                                                    <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Email </p>
+                                                    <p class="dark:text-white"><a
+                                                            href="mailto:insurewithgs@gmail.com">insurewithgs@gmail.com</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5">
+                                                <span
+                                                    class="socialbtn bg-white dark:bg-black text-[#FD7590] shadow-md px-4">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                </span>
+                                                <div class="text-left ml-2.5">
+                                                    <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]"> Location </p>
+                                                    <p class="dark:text-white">3rd Floor, Om Sai Residency, Beside Khela
+                                                        Ghar, Nr.Star Club Ghogha Circle, Bhavnagar 364002</p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- personal info end -->
+
+                                        <!-- dowanload button -->
+                                        <button class="dowanload-btn" onclick="window.open('./vcard/GauravShah.vcf')">
+                                            <img class="mr-3" src="vcard/images/icons/dowanload.png" alt="icon" /> Save
+                                            Contact
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- personal info for mobile devices end -->
+
+                            <div class="lg:grid grid-cols-12 md:gap-10 pt-4 sm:px-5 md:pt-[30px] items-center"
+                                style="text-align: justify; padding: 15px;">
+                                <div class="col-span-12 space-y-2.5">
+                                    <div class="lg:mr-16">
+                                        <p class="text-[#44566c] dark:text-color-910 leading-7"> Hi, I’m Gaurav Shah,
+                                            your dedicated Financial Architect for life and general insurance. I
+                                            specialize in crafting customized plans to secure your financial well-being
+                                            and protect what matters most to you. Whether it’s safeguarding your family,
+                                            assets, or future goals, I’m here to guide you every step of the way. Let’s
+                                            work together to create a stress-free, prosperous tomorrow!
+                                        </p>
+                                        <!-- <h2 class="mt-6 mb-1 text-[26px] font-semibold dark:text-white">Key Offerings
+                                        </h2>
+                                        <p class="text-[#44566c] leading-7 mt-2.5 dark:text-color-910">
+                                            • Health Insurance <br>
+                                            • Personal Accident Insurance <br>
+                                            • Overseas Travel Insurance <br>
+                                            • Car Insurance <br>
+                                            • Two-Wheeler Insurance <br>
+                                            • Shop Insurance <br>
+                                            • WC Plan <br>
+                                            • Marine Insurance <br>
+                                            • House Insurance <br>
+                                            • Fire Insurance <br>
+                                            • Term Plan <br>
+                                            • Child Plan <br>
+                                            • Pension Plan <br>
+                                            • Commercial Vehicle Insurance </p> -->
+                                    </div>
+                                    <div></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                       <!-- Services Accordion -->
+<div class="bg-white dark:bg-[#111111] rounded-2xl mt-10 p-6">
+    <h2 class="text-2xl font-semibold dark:text-white mb-6">Key Offerings</h2>
+    <div class="space-y-4">
+
+        <!-- Corporate Insurance -->
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg">
+            <button class="w-full flex justify-between items-center p-4 text-left text-lg font-medium dark:text-white"
+                onclick="toggleAccordion(this)">
+                Corporate Insurance
+                <span class="accordion-icon">+</span>
+            </button>
+            <div class="hidden px-4 pb-4 text-gray-600 dark:text-gray-300">
+                <ul class="list-disc pl-6 space-y-2 mt-3">
+                    <li>Marine Insurance</li>
+                    <li>Fire Insurance</li>
+                    <li>Workmen’s Compensation</li>
+                    <li>Burglary Insurance</li>
+                    <li>Package Insurance</li>
+                    <li>Engineering Insurance</li>
+                    <li>Liability Insurance</li>
+                    <li>Group Health Insurance</li>
+                    <li>Group PA Insurance</li>
+                    <li>Group Travel Insurance</li>
+                    <li>Trade Credit Insurance</li>
+                    <li>Mega Risk Insurance</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Individual Insurance -->
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg">
+            <button class="w-full flex justify-between items-center p-4 text-left text-lg font-medium dark:text-white"
+                onclick="toggleAccordion(this)">
+                Individual Insurance
+                <span class="accordion-icon">+</span>
+            </button>
+            <div class="hidden px-4 pb-4 text-gray-600 dark:text-gray-300">
+                <ul class="list-disc pl-6 space-y-2 mt-3">
+                    <li>Car Insurance</li>
+                    <li>Two Wheeler Insurance</li>
+                    <li>Commercial Vehicle</li>
+                    <li>Personal Accident Insurance</li>
+                    <li>Property Insurance</li>
+                    <li>Cyber Fraud Insurance</li>
+                    <li>Travel Insurance</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Health Insurance -->
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg">
+            <button class="w-full flex justify-between items-center p-4 text-left text-lg font-medium dark:text-white"
+                onclick="toggleAccordion(this)">
+                Health Insurance
+                <span class="accordion-icon">+</span>
+            </button>
+            <div class="hidden px-4 pb-4 text-gray-600 dark:text-gray-300">
+                <ul class="list-disc pl-6 space-y-2 mt-3">
+                    <li>Individual Mediclaim</li>
+                    <li>Top-up Mediclaim</li>
+                    <li>Senior Citizen Mediclaim</li>
+                    <li>Global Healthcare</li>
+                    <li>Family Floater</li>
+                    <li>Critical Illness Mediclaim</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Life Insurance -->
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg">
+            <button class="w-full flex justify-between items-center p-4 text-left text-lg font-medium dark:text-white"
+                onclick="toggleAccordion(this)">
+                Life Insurance
+                <span class="accordion-icon">+</span>
+            </button>
+            <div class="hidden px-4 pb-4 text-gray-600 dark:text-gray-300">
+                <ul class="list-disc pl-6 space-y-2 mt-3">
+                    <li>Term Life Insurance</li>
+                    <li>Saving Life Insurance</li>
+                    <li>Child Life Insurance</li>
+                    <li>Guaranteed Income</li>
+                    <li>Moneyback Plan</li>
+                    <li>Unit Linked Plan</li>
+                    <li>Business Insurance</li>
+                    <li>Pension Plan</li>
+                    <li>Group Term Life</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function toggleAccordion(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector(".accordion-icon");
+        if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+            icon.textContent = "-";
+        } else {
+            content.classList.add("hidden");
+            icon.textContent = "+";
+        }
+    }
+</script>
+
+
+
+                        <!-- Gallery Section -->
+                        <div class="bg-white dark:bg-[#111111] rounded-2xl mt-10 p-6">
+                            <h2 class="text-2xl font-semibold dark:text-white mb-6">Awards & Achievements</h2>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                                <img src="vcard/images/gallery/gallery1.jpeg" alt="Gallery Image"
+                                    class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                <img src="vcard/images/gallery/gallery2.jpeg" alt="Gallery Image"
+                                    class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                <img src="vcard/images/gallery/gallery3.jpeg" alt="Gallery Image"
+                                    class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                <img src="vcard/images/gallery/gallery4.jpeg" alt="Gallery Image"
+                                    class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                <img src="vcard/images/gallery/gallery5.jpeg" alt="Gallery Image"
+                                    class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                <img src="vcard/images/gallery/gallery6.jpeg" alt="Gallery Image"
+                                    class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                <img src="vcard/images/gallery/gallery7.jpeg" alt="Gallery Image"
+                                    class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                <img src="vcard/images/gallery/gallery8.jpeg" alt="Gallery Image"
+                                    class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                <img src="vcard/images/gallery/gallery9.jpeg" alt="Gallery Image"
+                                    class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                <img src="vcard/images/gallery/gallery10.jpeg" alt="Gallery Image"
+                                    class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                                <img src="vcard/images/gallery/gallery11.jpeg" alt="Gallery Image"
+                                    class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="pb-12 px-2 sm:px-5 md:px-10 lg:px-14">
+                            <h3 class="text-[35px] dark:text-white font-bold font-robotoSlab pb-5"> What I do! </h3>
+                            <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+                                <div class="about-box bg-[#fcf4ff] dark:bg-transparent">
+                                    <img class="w-10 h-10 object-contain block" src="vcard/images/icons/icon.svg"
+                                        alt="icon" />
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-[22px] font-semibold"> Ui/Ux Design </h3>
+                                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]"> Lorem ipsum dolor sit
+                                            amet, consectetuer adipiscing elit, sed diam euismod volutpat. </p>
+                                    </div>
+                                </div>
+
+                                <div class="about-box bg-[#fefaf0] dark:bg-transparent">
+                                    <img class="w-10 h-10 object-contain block" src="vcard/images/icons/icon1.svg"
+                                        alt="icon" />
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-[22px] font-semibold"> App Development </h3>
+                                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]"> Lorem ipsum dolor sit
+                                            amet, consectetuer adipiscing elit, sed diam euismod volutpat. </p>
+                                    </div>
+                                </div>
+
+                                <div class="about-box bg-[#fcf4ff] dark:bg-transparent">
+                                    <img class="w-10 h-10 object-contain block" src="vcard/images/icons/icon2.svg"
+                                        alt="icon" />
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-[22px] font-semibold"> Photography </h3>
+                                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]"> Lorem ipsum dolor sit
+                                            amet, consectetuer adipiscing elit, sed diam euismod volutpat. </p>
+                                    </div>
+                                </div>
+
+                                <div class="about-box bg-[#fff4f4] dark:bg-transparent">
+                                    <img class="w-10 h-10 object-contain block" src="vcard/images/icons/icon3.svg"
+                                        alt="icon" />
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-[22px] font-semibold"> Photography </h3>
+                                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]"> Lorem ipsum dolor sit
+                                            amet, consectetuer adipiscing elit, sed diam euismod volutpat. </p>
+                                    </div>
+                                </div>
+
+                                <div class="about-box bg-[#fff0f8] dark:bg-transparent">
+                                    <img class="w-10 h-10 object-contain block" src="vcard/images/icons/icon4.svg"
+                                        alt="icon" />
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-[22px] font-semibold"> Managment </h3>
+                                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]"> Lorem ipsum dolor sit
+                                            amet, consectetuer adipiscing elit, sed diam euismod volutpat. </p>
+                                    </div>
+                                </div>
+
+                                <div class="about-box bg-[#f3faff] dark:bg-transparent">
+                                    <img class="w-10 h-10 object-contain block" src="vcard/images/icons/icon5.svg"
+                                        alt="icon" />
+                                    <div class="space-y-2">
+                                        <h3 class="dark:text-white text-[22px] font-semibold"> Web Development </h3>
+                                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]"> Lorem ipsum dolor sit
+                                            amet, consectetuer adipiscing elit, sed diam euismod volutpat. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- footer start -->
+                        <footer class="overflow-hidden rounded-b-2xl" style="background: transparent">
+                            <p class="text-center py-6 text-gray-lite dark:text-color-910"> © <span
+                                    id="currentYear"></span> All Rights Reserved
+                        </footer>
+                        <!-- footer section end -->
+                    </div>
+                </div>
+                <!-- about me section start -->
+            </div>
+        </div>
+    </div>
+    <!-- End bgHomeBg -->
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector(".accordion-icon");
+            if (content.classList.contains("hidden")) {
+                content.classList.remove("hidden");
+                icon.textContent = "-";
+            } else {
+                content.classList.add("hidden");
+                icon.textContent = "+";
+            }
+        }
+    </script>
+    <!--==== js =====-->
+    <script src="vcard/js/vendor/jquary.min.js"></script>
+    <script src="vcard/js/vendor/slick.js"></script>
+    <!-- main js -->
+    <script src="vcard/js/main.js"></script>
+</body>
+
+
+
+</html>
